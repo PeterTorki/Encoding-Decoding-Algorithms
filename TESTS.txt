@@ -1,0 +1,64 @@
+TESTS 
+
+1- LBC: 
+    U = 
+     1 0 1 1
+    G =
+     1 1 0 1 0 0 0 ; 0 1 1 0 1 0 0 ; 1 1 1 0 0 1 0 ; 1 0 1 0 0 0 1
+    V = 
+     1 0 0 1 0 0 1 
+
+2- Cyclic code:
+        non-systematic(direct method)
+        U = 
+            1 0 0 1
+        G = 
+            1 1 0 1
+        V =
+            1 0 1 0 0 1 1 
+            
+        Systematic:
+                U =
+                    1 1 0 1
+                G =
+                    1 1 0 1  
+                V -> [0 0 1 1 1 0 1]
+    Error fix:
+        g = 
+            1 1 0 1
+        V = 
+            0 1 0 0 1 0 1
+
+        res =  
+        [1 1 0 0 0 1 0]
+
+3- Caesar cipher:
+        plaintext =
+            meet me after party
+        key =
+            3
+        -> cipheredtext = 
+                PHHW PH DIWHU SDUWB
+
+4- Hill cipher:
+        plaintext =
+            paymoremoney
+        key =
+            17 17 5 ; 21 18 21 ; 2 2 19
+        -> ciphertext = RRLMWBKASPDH
+
+5- Vene:
+        Plain Text =
+        this is vigenere example
+        Key =
+            cipher
+        Res -> 
+            VPXZ MJ XQVLRVTM TEEDRTT
+    
+6- PlayFair:
+        Plain Text =
+            instruments
+        Key = 
+            Monarchy
+        Res ->
+            GATLMZCLRQTX
